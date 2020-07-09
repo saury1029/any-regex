@@ -18,17 +18,16 @@
   }
 </script>
 
-<style global>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  * {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  main {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-</style>
+<svelte:head>
+  <style>
+    * {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    main {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</svelte:head>
 
 <main class="min-w-screen min-h-screen pb-8 bg-gray-200">
   <Header />
