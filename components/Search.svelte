@@ -18,13 +18,13 @@
   <input
     type="text"
     placeholder="搜索关键词，如'手机'"
-    class="w-full p-4 h-16 pr-16 shadow rounded-md border-2 border-indigo-400
-    focus:border-indigo-400 focus:outline-none"
+    class="w-full p-4 h-12 pr-10 rounded-md border-2 focus:border-indigo-400
+    focus:outline-none focus:shadow"
     bind:value={keyword}
     use:focus />
   {#if keyword}
     <div
-      class="absolute top-0 right-0 w-16 h-16 flex item-center justify-end pr-4"
+      class="absolute top-0 right-0 w-12 h-12 flex item-center justify-end pr-4"
       transition:fade={{ duration: 200 }}>
       <button class="text-gray-400 focus:outline-none" on:click={clickHandle}>
         <svg

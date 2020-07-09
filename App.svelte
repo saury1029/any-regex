@@ -9,14 +9,19 @@
 
   let keyword = "";
 
-  $: rules = rulesList.filter(rule => rule.title.toLowerCase().includes(keyword));
+  $: rules = rulesList.filter(rule =>
+    rule.title.toLowerCase().includes(keyword)
+  );
 
   function clearKeywordHandle() {
     keyword = "";
   }
 </script>
 
-<style>
+<style global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
   * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
@@ -28,10 +33,10 @@
 <main class="min-w-screen min-h-screen pb-8 bg-gray-200">
   <Header />
   <Container className="pt-6">
-    <Search bind:keyword on:clear={clearKeywordHandle}/>
+    <Search bind:keyword on:clear={clearKeywordHandle} />
     <div class="mt-6">
       {#each rules as rule}
-        <Item {rule}></Item>
+        <Item {rule} />
       {/each}
       {#if rules.length === 0}
         <Empty />

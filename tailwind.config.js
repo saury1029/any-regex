@@ -1,11 +1,8 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./**/*.svelte'],
-  },
+  purge: [],
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
-};
+}
