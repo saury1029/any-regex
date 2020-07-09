@@ -21,7 +21,7 @@
       var oTop = document.body.scrollTop || document.documentElement.scrollTop;
       if (oTop > 0) {
         document.body.scrollTop = document.documentElement.scrollTop =
-          oTop - oTop / 6; //可以调整数字明确放慢速度20->50,为0时为正常速度
+          oTop - oTop / 4; //可以调整数字明确放慢速度20->50,为0时为正常速度
         timer = requestAnimationFrame(fn);
       } else {
         cancelAnimationFrame(timer);
@@ -32,7 +32,7 @@
 
 {#if scrollTop > 500}
   <div
-    class="fixed right-0 bottom-0 mb-8 mr-8 p-3 bg-black text-white
+    class="fixed right-0 bottom-0 mb-8 mr-8 p-3 bg-indigo-600 text-white
     bg-opacity-75 rounded-full cursor-pointer"
     transition:scale={{ duration: 400, opacity: 0.1, start: 0, easing: quintOut }}
     on:click={scrollToTop}>
