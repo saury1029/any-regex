@@ -20,14 +20,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@fullhuman/postcss-purgecss@^2.1.2":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-2.3.0.tgz#50a954757ec78696615d3e118e3fee2d9291882e"
-  dependencies:
-    postcss "7.0.32"
-    purgecss "^2.3.0"
-
-"@fullhuman/postcss-purgecss@^2.3.0":
+"@fullhuman/postcss-purgecss@^2.1.2", "@fullhuman/postcss-purgecss@^2.3.0":
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/@fullhuman/postcss-purgecss/download/@fullhuman/postcss-purgecss-2.3.0.tgz#50a954757ec78696615d3e118e3fee2d9291882e"
   dependencies:
@@ -117,19 +110,7 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-autoprefixer@^9.4.5:
-  version "9.8.4"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.8.4.tgz#736f1012673a70fa3464671d78d41abd54512863"
-  dependencies:
-    browserslist "^4.12.0"
-    caniuse-lite "^1.0.30001087"
-    colorette "^1.2.0"
-    normalize-range "^0.1.2"
-    num2fraction "^1.2.2"
-    postcss "^7.0.32"
-    postcss-value-parser "^4.1.0"
-
-autoprefixer@^9.8.4:
+autoprefixer@^9.4.5, autoprefixer@^9.8.4:
   version "9.8.4"
   resolved "https://registry.npm.taobao.org/autoprefixer/download/autoprefixer-9.8.4.tgz#736f1012673a70fa3464671d78d41abd54512863"
   dependencies:
@@ -907,8 +888,8 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
 
 mkdirp@~0.5.1:
   version "0.5.5"
